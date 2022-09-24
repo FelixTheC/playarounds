@@ -15,6 +15,9 @@ jobs:
       - name: Run migrations
         run: docker exec -i playarounds_web_1 poetry run python manage.py migrate
 
+      - name: Run tests
+        run: docker exec -i playarounds_web_1 poetry run python manage.py test
+
       - name: Stop containers
         if: always()
         run: docker-compose -f docker-compose.ci.yml down
