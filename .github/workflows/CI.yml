@@ -16,7 +16,7 @@ jobs:
         run: docker ps; sleep 10
 
       - name: Run migrations
-        run: docker exec -it web_1 poetry run python manage.py migrate
+        run: docker exec -it playarounds_web_1 poetry run python manage.py migrate
 
       - name: Stop containers
         if: always()
