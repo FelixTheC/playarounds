@@ -7,7 +7,7 @@ authors = ["FelixTheC <felixeisenmenger@gmx.net>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 django = "^4.1.0"
-psycopg2 = "*"
+psycopg2-binary = "2.9.3"
 
 [tool.poetry.dev-dependencies]
 black = "22.3.0"
