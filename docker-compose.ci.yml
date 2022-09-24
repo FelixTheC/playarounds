@@ -21,3 +21,4 @@ services:
     environment:
       DB_HOST: postgres-db
     command: /bin/bash
+    tty: true

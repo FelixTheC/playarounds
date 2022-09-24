@@ -12,9 +12,6 @@ jobs:
       - name: Build the stack
         run: docker-compose -f docker-compose.ci.yml up -d
 
-      - name: Display docker containers
-        run: docker ps; sleep 10
-
       - name: Run migrations
         run: docker exec -i playarounds_web_1 poetry run python manage.py migrate
 
